@@ -1,0 +1,20 @@
+﻿@'
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/generar-seo.py",
+      "use": "@vercel/python",
+      "config": {
+        "maxLambdaSize": "50mb"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/generar-seo",
+      "dest": "/api/generar-seo.py"
+    }
+  ]
+}
+'@ | Out-File -FilePath "vercel.json" -Encoding utf8

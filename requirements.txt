@@ -1,2 +1,1 @@
-﻿# Dependencias para Vercel Python runtime
-# Agregá aquí si necesitás librerías externas
+# Python dependencies for Vercel
