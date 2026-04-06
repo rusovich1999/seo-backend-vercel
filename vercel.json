@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "version": 2,
   "builds": [
@@ -13,3 +14,6 @@
     }
   ]
 }
+=======
+﻿{"version":2,"builds":[{"src":"api/generar-seo.py","use":"@vercel/python"}],"routes":[{"src":"/api/generar-seo","dest":"/api/generar-seo.py"}]}
+>>>>>>> e9d9a83 (fix: vercel.json válido)
