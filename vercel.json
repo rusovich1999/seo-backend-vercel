@@ -1,18 +1,15 @@
 ﻿{
-    "builds":  [
-                   {
-                       "config":  {
-                                      "maxLambdaSize":  "50mb"
-                                  },
-                       "use":  "@vercel/python",
-                       "src":  "api/generar-seo.py"
-                   }
-               ],
-    "routes":  [
-                   {
-                       "src":  "/api/generar-seo",
-                       "dest":  "/api/generar-seo.py"
-                   }
-               ],
-    "version":  2
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/generar-seo.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/generar-seo",
+      "dest": "/api/generar-seo.py"
+    }
+  ]
 }
